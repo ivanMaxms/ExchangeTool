@@ -1,4 +1,4 @@
-FROM amazoncorretto:18.0.2-alpine
+FROM openjdk:8u131-jdk-alpine
 
 LABEL maintainer="Ivan Andreev"
 
