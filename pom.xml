@@ -181,7 +181,7 @@
 
 				<configuration>
 					<!--  If using Docker Toolbox (Windows), you must find the IP of your VM. docker-machine ip -->
-                    <dockerHost>http://192.168.99.100:2375</dockerHost> 
+					<!--  <dockerHost>http://192.168.99.100:2375</dockerHost> -->
 
 					<!--  linux -->
                     <!--<dockerHost>http://127.0.0.1:2375</dockerHost>-->
@@ -191,12 +191,11 @@
                     <verbose>true</verbose>
 					<images>
 						<image>
-							<name>virtualpairprogrammers/fleetman-webapp</name>
+							<name>exchange-tool</name>
 							<build>
-								<!--  TODO better to have this in a subdirectory -->
 								<dockerFileDir>${project.basedir}/src/main/docker/</dockerFileDir>
 
-                                <!--copies artficact to docker build dir in target-->
+                                <!--copies artifact to docker build dir in target-->
 								<assembly>
 									<descriptorRef>artifact</descriptorRef>
 								</assembly>
