@@ -3,13 +3,13 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.virtualpairprogrammers</groupId>
-	<artifactId>fleetman</artifactId>
+	<groupId>com.exchangeproject</groupId>
+	<artifactId>exchangeprojectwebapp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>fleetman</name>
-	<description>VPP's Fleet Management Application</description>
+	<name>exchangeprojectwebapp</name>
+	<description>Exchange Tool Web Application</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -170,7 +170,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<!--  For standalone JAR file <configuration><executable>false</executable></configuration> -->
 				<configuration>
-                	<mainClass>com.virtualpairprogrammers.TomcatWARApplication</mainClass>
+                	<mainClass>com.exchangeproject.TomcatWARApplication</mainClass>
             	</configuration>
 			</plugin>
 			
