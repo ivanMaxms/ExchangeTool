@@ -6,6 +6,6 @@ EXPOSE 8080
 
 WORKDIR /usr/local/bin/
 
-COPY maven/fleetman-0.0.1-SNAPSHOT.jar webapp.jar
+COPY maven/exchangeprojectwebapp-0.0.1-SNAPSHOT.jar webapp.jar
 
 CMD ["java", "-Dspring.profiles.active=development", "-jar", "webapp.jar"]
